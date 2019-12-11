@@ -113,7 +113,7 @@ $img = get_field('banner_background_image');
 
   <h3 class="section-title"><?php the_field('orators_title')?></h3>
 
-  <hr/>
+  <hr />
 
   <div class="orators-wrapper">
 
