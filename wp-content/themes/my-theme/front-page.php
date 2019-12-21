@@ -236,11 +236,11 @@ $xxxx = get_field('download_image');
 
         // var_dump($side_videos);
 
-        $img = $side_videos[0]['secondary_video_banner']['url'];
+        // $img = $side_videos[0]['secondary_video_banner']['url'];
 
         foreach($side_videos as $side_video){
           echo "<div class='item'>";
-            echo "<div class='secondary_video_banner' style='background-image: url($img);'></div>";
+            echo "<div class='secondary_video_banner' style='background-image: url(".$side_video['secondary_video_banner']['url'].");'></div>";
               
             echo "<div style='padding-left: 2rem;'>";
             echo "<span class='title'>".$side_video['secondary_video_title']."</span>";

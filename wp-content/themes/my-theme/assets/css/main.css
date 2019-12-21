@@ -530,7 +530,8 @@ hr{
 }
 
 .section-prefooter .row .banner{
-   background-color: red;
+   background-size: cover;
+   background-position: center;
    height: 100%;
    position: relative;
    display: flex;
