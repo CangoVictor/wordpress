@@ -290,8 +290,10 @@ $xxxx = get_field('download_image');
 
       ?> 
 
-      <?php $xxxx = get_field('download_image');
-        // var_dump($xxxx);
+      <?php 
+        $xxxx = get_field('download_image');
+        $xxxx2 = get_field('download_image_alt');
+
       ?>
 
     </div>
@@ -303,16 +305,15 @@ $xxxx = get_field('download_image');
 <section class="section-prefooter">
 
     <div class="row">
-
-      <div class="banner" style="background-image: url(<?php echo $test['url']; ?>);">
-        <span>Vous verrez que ceci marche</span>
+      <div class="banner" style="background-image: url(<?php echo $xxxx['url']; ?>);">
+      <span><?php the_field('prefooter_title_left') ?></span>
 
       </div>
 
     </div>
 
     <div class="row">
-      <div class="banner" style="background-image: url(<?php echo $test1['url']; ?>);">
+      <div class="banner" style="background-image: url(<?php echo $xxxx2['url']; ?>);">
         <span><?php the_field('prefooter_title_right') ?></span>
 
       </div>
