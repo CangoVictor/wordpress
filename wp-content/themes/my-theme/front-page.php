@@ -22,6 +22,8 @@ if ( have_posts() ) {
 <?php
     
 $img = get_field('banner_background_image');
+$xxxx = get_field('download_image');
+        // var_dump($xxxx);
       
 ?>
     
@@ -283,9 +285,14 @@ $img = get_field('banner_background_image');
         </div>
 
       <?php echo "</div>";
-      } 
+      }
+      wp_reset_postdata();  // permet de reset la query et d'isoler le contexte (manière de faire pointer chaque poste à la BDD)
 
       ?> 
+
+      <?php $xxxx = get_field('download_image');
+        // var_dump($xxxx);
+      ?>
 
     </div>
 
@@ -294,8 +301,6 @@ $img = get_field('banner_background_image');
 </section>
 
 <section class="section-prefooter">
-
-    <?php $test = get_field('prefooter_left'); ?>
 
     <div class="row">
 
